@@ -1,0 +1,11 @@
+import express from "express";
+import projectForm from "../controller/projectForm.js";
+import showProject from "../controller/showProjectController.js";
+// const express=require("express");
+// const projectForm = require("../controller/projectForm");
+// const showProject = require("../controller/showProjectController");
+const routes = express.Router();
+routes.post("/projectForm", projectForm);
+routes.get("/allproject", showProject);
+// module.exports=routes;
+export default routes;
